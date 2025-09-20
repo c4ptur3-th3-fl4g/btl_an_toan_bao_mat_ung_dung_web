@@ -1,0 +1,1715 @@
+2025-09-20 10:07:01,901 [INFO] from org.reflections.Reflections in main - Reflections took 134 ms to scan 2 urls, producing 102 keys and 701 values
+2025-09-20 10:07:01,919 [INFO] from module in main - Loading model class org.thp.cortex.models.OrganizationModel
+2025-09-20 10:07:01,922 [INFO] from module in main - Loading model class org.thp.cortex.models.JobModel
+2025-09-20 10:07:01,923 [INFO] from module in main - Loading model class org.elastic4play.services.AttachmentModel
+2025-09-20 10:07:01,923 [INFO] from module in main - Loading model class org.thp.cortex.models.WorkerModel
+2025-09-20 10:07:01,923 [INFO] from module in main - Loading model class org.thp.cortex.models.ArtifactModel
+2025-09-20 10:07:01,923 [INFO] from module in main - Loading model class org.thp.cortex.models.AuditModel
+2025-09-20 10:07:01,923 [INFO] from module in main - Loading model class org.elastic4play.services.DBListModel
+2025-09-20 10:07:01,923 [INFO] from module in main - Loading model class org.thp.cortex.models.UserModel
+2025-09-20 10:07:01,923 [INFO] from module in main - Loading model class org.thp.cortex.models.WorkerConfigModel
+2025-09-20 10:07:01,923 [INFO] from module in main - Loading model class org.thp.cortex.models.ReportModel
+2025-09-20 10:07:01,931 [INFO] from module in main - Loading authentication module class org.elastic4play.services.auth.ADAuthSrv
+2025-09-20 10:07:01,931 [INFO] from module in main - Loading authentication module class org.elastic4play.services.auth.LdapAuthSrv
+2025-09-20 10:07:01,931 [INFO] from module in main - Loading authentication module class org.thp.cortex.services.KeyAuthSrv
+2025-09-20 10:07:01,931 [INFO] from module in main - Loading authentication module class org.thp.cortex.services.LocalAuthSrv
+2025-09-20 10:07:01,931 [INFO] from module in main - Loading authentication module class org.thp.cortex.services.OAuth2Srv
+2025-09-20 10:07:02,834 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2025-09-20 10:07:04,077 [WARN] from org.thp.cortex.services.WorkerSrv in application-akka.actor.default-dispatcher-7 - Worker path (/opt/cortexneurons/responders) is not found
+java.net.MalformedURLException: no protocol: /opt/cortexneurons/responders
+	at java.base/java.net.URL.<init>(URL.java:645)
+	at java.base/java.net.URL.<init>(URL.java:541)
+	at java.base/java.net.URL.<init>(URL.java:488)
+	at org.thp.cortex.services.WorkerSrv.$anonfun$scan$21(WorkerSrv.scala:200)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:85)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2025-09-20 10:07:04,077 [WARN] from org.thp.cortex.services.WorkerSrv in application-akka.actor.default-dispatcher-5 - Worker path (/opt/cortexneurons/analyzers) is not found
+java.net.MalformedURLException: no protocol: /opt/cortexneurons/analyzers
+	at java.base/java.net.URL.<init>(URL.java:645)
+	at java.base/java.net.URL.<init>(URL.java:541)
+	at java.base/java.net.URL.<init>(URL.java:488)
+	at org.thp.cortex.services.WorkerSrv.$anonfun$scan$21(WorkerSrv.scala:200)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:85)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2025-09-20 10:07:04,851 [INFO] from org.thp.cortex.services.DockerJobRunnerSrv in main - Docker is available:
+Info{architecture=x86_64, clusterStore=null, cgroupDriver=systemd, containers=12, containersRunning=10, containersStopped=2, containersPaused=0, cpuCfsPeriod=true, cpuCfsQuota=true, debug=false, dockerRootDir=/var/lib/docker, storageDriver=overlay2, driverStatus=[[Backing Filesystem, extfs], [Supports d_type, true], [Using metacopy, true], [Native Overlay Diff, false], [userxattr, false]], executionDriver=null, experimentalBuild=false, httpProxy=, httpsProxy=, id=633ec6a4-9702-4642-998c-f0988d02adcf, ipv4Forwarding=true, images=24, indexServerAddress=https://index.docker.io/v1/, initPath=null, initSha1=null, kernelMemory=null, kernelVersion=6.16.7-2-cachyos, labels=[], memTotal=16591335424, memoryLimit=true, cpus=8, eventsListener=1, fileDescriptors=123, goroutines=127, name=bombsquad, noProxy=, oomKillDisable=false, operatingSystem=CachyOS, osType=linux, plugins=Plugins{volumes=[local], networks=[bridge, host, ipvlan, macvlan, null, overlay]}, registryConfig=RegistryConfig{indexConfigs={docker.io=IndexConfig{name=docker.io, mirrors=[], secure=true, official=true}}, insecureRegistryCidrs=[::1/128, 127.0.0.0/8]}, serverVersion=28.4.0, swapLimit=true, swarm=SwarmInfo{cluster=null, controlAvailable=false, error=, localNodeState=inactive, nodeAddr=, nodeId=, nodes=null, managers=null, remoteManagers=null}, systemStatus=[], systemTime=Sat Sep 20 10:07:04 UTC 2025}
+2025-09-20 10:07:04,866 [WARN] from org.thp.cortex.services.JobRunnerSrv in main - The package cortexutils for python hasn't been found
+2025-09-20 10:07:04,867 [WARN] from org.thp.cortex.services.JobRunnerSrv in main - The package cortexutils for python2 hasn't been found
+2025-09-20 10:07:04,867 [WARN] from org.thp.cortex.services.JobRunnerSrv in main - The package cortexutils for python3 hasn't been found
+2025-09-20 10:07:05,028 [INFO] from com.sksamuel.elastic4s.http.JavaClient$ in main - Creating HTTP client on http://elasticsearch:9200
+2025-09-20 10:07:05,271 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2025-09-20 10:07:05,435 [ERROR] from org.elastic4play.database.DBConfiguration in application-akka.actor.default-dispatcher-4 - ElasticSearch request failure: POST /cortex_6/_search?scroll=60000ms
+{"seq_no_primary_term":"true","query":{"bool":{"must":[{"term":{"relations":{"value":"job"}}},{"term":{"status":{"value":"Waiting"}}}]}},"from":0,"sort":[{"_doc":{"order":"desc"}}]}
+ => ElasticError(index_not_found_exception,no such index [cortex_6],Some(_na_),Some(cortex_6),None,List(ElasticError(index_not_found_exception,no such index [cortex_6],Some(_na_),Some(cortex_6),None,null,None,None,None,List())),None,None,None,List())
+2025-09-20 10:07:05,441 [WARN] from org.elastic4play.database.SearchWithScroll in application-akka.actor.default-dispatcher-9 - Search error
+org.elastic4play.IndexNotFoundException$: null
+	at org.elastic4play.IndexNotFoundException$.<clinit>(Errors.scala)
+	at org.elastic4play.database.DBConfiguration.$anonfun$execute$2(DBConfiguration.scala:155)
+	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:307)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:41)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:85)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2025-09-20 10:07:05,721 [INFO] from play.core.server.AkkaHttpServer in main - Enabling HTTP/2 on Akka HTTP server...
+2025-09-20 10:07:05,722 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9001
+2025-09-20 10:07:06,498 [INFO] from org.thp.cortex.services.WorkerSrv in application-akka.actor.default-dispatcher-6 - New worker list:
+
+	NERD 1.1
+	RiskIQ_Certificates 1.0
+	IPVoid 1.0
+	SEKOIAIntelligenceCenter_Indicators 1.0
+	RiskIQ_Projects 1.0
+	Shuffle 1.0
+	SEKOIAIntelligenceCenter_Context 1.0
+	CrowdStrikeFalcon_unsuppressDetections 1.0
+	HarfangLab-GetArtifactAll 1.0
+	RiskIQ_Cookies 1.0
+	HIBP_Query 2.0
+	CheckPoint_Unlock 1.0
+	DNSSinkhole 1.0
+	DomainToolsIris_Investigate 1.0
+	ThreatMiner 1.0
+	MSDefender-UnisolateMachine 1.0
+	Autofocus_SearchJSON 1.0
+	Gatewatcher_CTI_Identity 1.0
+	JAMFProtect_removeHashfromPreventList 1.0
+	DomainTools_Reputation 2.0
+	PaloAltoCortexXDR_isolate 1.0
+	AMPforEndpoints_SCDAdd 1.0
+	MaxMind_GeoIP 4.0
+	Watcher_RemoveDomain 1.2
+	Crowdstrike_Falcon_Custom_IOC_API 1.0
+	FileInfo 8.0
+	DuoBypassUserAccount 1.0
+	PaloAltoNGFW_block_external_user 1.0.0
+	SentinelOne_Hash_Blacklister 1.0
+	CheckPoint_Lock 1.0
+	FireEyeiSight 1.0
+	Malwares_GetReport 1.0
+	AWSLambda_InvokeFunction 1.0
+	JAMFProtect_addHashtoPreventList 1.0
+	Mnemonic_pDNS_Public 3.0
+	SEKOIAIntelligenceCenter_Observables 1.0
+	THOR_Thunderstorm_ScanSample 0.3.1
+	PaloAltoWildfire_URL_submission 1.0
+	Verifalia 1.0
+	MSEntraID_GetSignIns 1.0
+	RiskIQ_Articles 1.0
+	DomainTools_Risk 2.0
+	QrDecode 1.0
+	DomainMailSPFDMARC 1.1
+	EchoTrail 1.0
+	PassiveTotal_Osint 2.0
+	CIRCLPassiveDNS 2.0
+	CyberChef_FromHex 1.0
+	PaloAltoNGFW_block_port_for_external_communication 2.0.0
+	HarfangLab_SearchDriverByFileName 1.0
+	PassiveTotal_Passive_Dns 2.1
+	Shodan_Host 1.0
+	SendGrid 1.0
+	HarfangLab_SearchDriverByHash 1.0
+	DomainTools_WhoisLookupUnparsed 2.0
+	Hashdd_Detail 2.0
+	RiskIQ_Resolutions 1.0
+	Netcraft_TakedownPhishingURL 1.0
+	PassiveTotal_Host_Pairs 2.0
+	Hunterio_DomainSearch 1.0
+	LupovisProwl_GetIPReputation 1.1
+	CyberChef_FromCharCode 1.0
+	MISPWarningLists 2.0
+	Gmail_BlockDomain 1.0
+	EclecticIQ_Indicator_API 1.0
+	DomainTools_ReverseIPWhois 2.0
+	AbuseIPDB 1.0
+	TorProject 1.0
+	CrowdstrikeFalcon_Sandbox_Win7 1.0
+	RecordedFuture 2.0
+	HarfangLab-GetStartupFiles 1.0
+	CIRCLVulnerabilityLookup 1.0
+	Redmine_Issue 1.0
+	CIRCLPassiveSSL 2.0
+	Inoitsu 1.0
+	Splunk_Search_User_Agent 3.0
+	RiskIQ_HostpairParents 1.0
+	VirusTotal_Scan 3.1
+	HarfangLab-SearchHash 1.0
+	ChainAbuse 1.1
+	MSDefender-AutoInvestigation 1.0
+	MSEntraID_disableUser 1.0
+	EmergingThreats_DomainInfo 1.0
+	DNSDB_DomainName 2.0
+	AnyRun_Sandbox_Analysis 1.1
+	PhishTank_CheckURL 2.1
+	DNS-RPZ 1.0
+	MailIncidentStatus 1.0
+	Watcher_AddDomain 1.2
+	PaloAltoNGFW_block_internal_domain 2.0.0
+	StamusNetworks_HostID 1.0
+	IPinfo_Hosted_Domains 1.0
+	AWX_StartJob 1.0
+	RiskIQ_Subdomains 1.0
+	EmlParser 2.1
+	OktaUserLookup 1.0
+	MSDefender-PushIOC-Block 2.0
+	SpamhausDBL 1.0
+	SophosIntelix_GetReport 0.3
+	PassiveTotal_Trackers 2.0
+	ThreatResponse 1.0
+	MSEntraID_enableUser 1.0
+	MSEntraID_revokeSignInSessions 1.1
+	VirusTotal_GetReport 3.1
+	CrowdstrikeFalcon_Sandbox_Win7_64 1.0
+	Gmail_BlockSender 1.0
+	JA4_FoxIO 1.0
+	Maltiverse_Report 1.0
+	HarfangLab-GetPersistence 1.0
+	SophosIntelix_Submit_Dynamic 0.1
+	HarfangLab-SearchDestinationIP 1.0
+	ONYPHE_ASM 1.1
+	MSDefenderOffice365_unblock 1.0
+	BackscatterIO_GetObservations 1.0
+	OTXQuery 2.0
+	Investigate_Sample 1.0
+	PaloAltoNGFW_unblock_port_for_internal_communication 1.0.0
+	MetaDefenderCloud_Reputation 1.0
+	Autofocus_SearchIOC 1.0
+	Test 1.0
+	Capa 1.0
+	Splunk_Search_Mail_Email 3.0
+	CheckPhish 1.0
+	Patrowl_GetReport 1.0
+	NSRL 1.0
+	AMPforEndpoints_MoveGUID 1.0
+	RT4-CreateTicket 1.0
+	PhishingInitiative_Scan 1.0
+	Mailer 1.0
+	RiskIQ_Summary 1.0
+	C1fApp 1.0
+	MSDefenderOffice365_block 1.0
+	Zscaler 1.3
+	IP-API 1.1
+	OpenCTI_SearchObservables 2.0
+	Nessus 2.0
+	KnowBe4 1.0
+	Binalyze_AIR_Acquisition 1.0
+	SecurityTrails_Passive_DNS 1.0
+	Cylance 1.0
+	SentinelOne_DeepVisibility_DNSQuery 1.0
+	HarfangLab-GetSessions 1.0
+	Virusshare 2.0
+	Cloudflare_IP_Blocker 1.0
+	CrowdStrikeFalcon_suppressDetections 1.0
+	HarfangLab-GetScheduledTasks 1.0
+	Velociraptor_Flow 0.1
+	DomainTools_ReverseIP 2.0
+	Yeti 1.0
+	StaxxSearch 1.0
+	PaloAltoNGFW_unblock_external_domain 1.0.0
+	SinkDB 1.1
+	PaloAltoNGFW_unblock_external_IP_address 1.0.0
+	MalwareBazaar 1.0
+	DomainToolsIris_AddRiskyDNSTag 1.0
+	Robtex_Forward_PDNS_Query 1.0
+	CheckPhish_Submit 1.0
+	RiskIQ_Services 1.0
+	HarfangLab-GetDrivers 1.0
+	HarfangLab-GetWMI 1.0
+	ONYPHE_OnDemandScan 1.0
+	CrowdStrikeFalcon_RemoveIOC 1.0
+	MSDefender-PushIOC-Alert 2.0
+	MSEntraID_GetUserInfo 1.0
+	WOT_Lookup 2.0
+	JoeSandbox_File_Analysis_Inet 3.0
+	CrowdstrikeFalcon_Sandbox_Linux 1.0
+	RiskIQ_Whois 1.0
+	Yara 3.0
+	Ldap_Query 3.0
+	JoeSandbox_File_Analysis_Noinet 3.0
+	HarfangLab-GetPrefetches 1.0
+	Elasticsearch_Analysis 1.0
+	ONYPHE_Search 1.1
+	Splunk_Search_Hash 3.0
+	Autofocus_GetSampleAnalysis 1.0
+	HarfangLab-KillProcess 1.0
+	Virustotal_Downloader 0.1
+	DuoUnlockUserAccount 1.0
+	PaloAltoNGFW_unblock_internal_user 1.0.0
+	ONYPHE_Summary_API 1.2
+	Axur 1.0
+	EmergingThreats_IPInfo 1.0
+	Shodan_ReverseDNS 1.0
+	Shodan_Host_History 1.0
+	HarfangLab-GetServices 1.0
+	Wazuh 1.0
+	PassiveTotal_Whois_Details 2.0
+	MSDefender-RestrictAppExecution 1.0
+	Urlscan.io_Search 0.1.1
+	CrowdstrikeFalcon_getDeviceDetails 1.0
+	Jupyter_Run_Notebook_Responder 1.0
+	CIRCLHashlookup 1.1
+	ValidateObservable 1.0
+	CrowdStrikeFalcon_hideHost 1.0
+	PaloAltoNGFW_block_external_IP_address 2.0.0
+	DomainTools_WhoisLookup 2.0
+	PaloAltoNGFW_block_internal_IP_address 2.0.0
+	HarfangLab-GetArtifactRamdump 1.0
+	GRR 0.1
+	Censys 2.0
+	Cyberprotect_ThreatScore 3.0
+	PaloAltoNGFW_block_external_domain 2.0.0
+	MSEntraID_GetDirectoryAuditLogs 1.0
+	ZEROFOX_Close_alert 1.0
+	Minemeld 1.0
+	PassiveTotal_Malware 2.0
+	DomainTools_ReverseNameServer 2.0
+	CrowdstrikeFalcon_Sandbox_Win10 1.0
+	IntezerCommunity 1.0
+	DNSDB_IPHistory 2.0
+	PaloAltoNGFW_unblock_internal_domain 1.0.0
+	HarfangLab-IsolateHost 1.0
+	GoogleSafebrowsing 2.0
+	PassiveTotal_Enrichment 2.0
+	TestAnalyzer 1.0
+	PayloadSecurity_File_Analysis 1.0
+	CrowdstrikeFalcon_Sandbox_Win11 1.0
+	Msg_Parser 3.0
+	DNSdumpster_report 1.0
+	PaloAltoWildFire 1.0
+	CrowdstrikeFalcon_getDeviceAlerts 1.0
+	PassiveTotal_Unique_Resolutions 2.0
+	Splunk_Search_User 3.0
+	GreyNoise 3.2
+	RiskIQ_PushArtifactToProject 1.0
+	CuckooSandbox_Url_Analysis 1.2
+	BackscatterIO_Enrichment 1.0
+	CrowdStrikeFalcon_Sync 1.0
+	DomainTools_ReverseWhois 2.0
+	SophosIntelix_Submit_Static 0.1
+	Umbrella_Blacklister 1.1
+	ONYPHE_Ctiscan 1.0
+	ZEROFOX_Takedown_request 1.0
+	CyberCrime-Tracker 1.0
+	Gmail_DeleteMessage 1.0
+	EmailRep 1.0
+	KasperskyThreatIntelligencePortal 1.0
+	URLhaus 2.0
+	MISP 2.1
+	TeamCymruMHR 1.0
+	DShield_lookup 1.0
+	EmergingThreats_MalwareInfo 1.0
+	StopForumSpam 1.0
+	DomainTools_HostingHistory 2.0
+	Gatewatcher_CTI 2.0
+	EclecticIQ_SearchObservable 2.0
+	CyberChef_FromBase64 1.0
+	MSEntraID_ForcePasswordResetWithMFA 1.0
+	VirusTotal_Rescan 3.1
+	Telegram 1.0
+	Abuse_Finder 3.0
+	MSEntraID_GetManagedDevicesInfo 1.0
+	Investigate_Categorization 1.0
+	HarfangLab-GetArtifactMFT 1.0
+	HarfangLab-SearchSourceIP 1.0
+	HarfangLab-GetPipes 1.0
+	SecurityTrails_Whois 1.0
+	DomainTools_WhoisHistory 2.0
+	VirusTotal_DownloadSample 3.1
+	Watcher_CheckDomain 1.3
+	MetaDefenderCloud_Scan 1.0
+	PassiveTotal_Ssl_Certificate_History 2.0
+	HarfangLab-GetArtifactUSN 1.0
+	CrowdstrikeFalcon_Sandbox_Android 1.0
+	HarfangLab-GetArtifactPrefetch 1.0
+	Splunk_Search_Other 3.0
+	Malpedia 1.0
+	MetaDefenderCore_Scan 1.0
+	CrowdStrikeFalcon_unhideHost 1.0
+	Splunk_Search_Registry 3.0
+	RiskIQ_Malware 1.0
+	Crt_sh_Transparency_Logs 1.0
+	PaloAltoCortexXDR_scan 1.0
+	IPinfo_Details 1.0
+	CERTatPassiveDNS 2.0
+	Urlscan.io_Scan 0.1.0
+	RiskIQ_Components 1.0
+	HarfangLab-GetNetworkShares 1.0
+	DomainToolsIris_CheckMaliciousTags 1.0
+	MSDefender-UnRestrictAppExecution 1.0
+	ProofPoint_Lookup 1.0
+	PayloadSecurity_Url_Analysis 1.0
+	HarfangLab-GetArtifactLogs 1.0
+	MSDefender-FullVirusscan 1.0
+	Shodan_DNSResolve 1.0
+	Splunk_Search_Mail_Subject 3.0
+	VMRay 4.1
+	GoogleDNS_resolve 1.0.0
+	DomainToolsIris_Pivot 1.0
+	MetaDefenderCloud_GetReport 1.0
+	FalconSandbox 1.0
+	OpenCTI_SearchExactObservable 2.0
+	Shodan_InfoDomain 1.0
+	CuckooSandbox_File_Analysis_Inet 1.2
+	Crowdstrike_Falcon_Custom_IOC 2.0
+	HarfangLab-GetArtifactHives 1.0
+	DNS_Lookingglass 1.0
+	Jupyter_Run_Notebook_Analyzer 1.0
+	GoogleVisionAPI_WebDetection 1.0.0
+	Valhalla_GetRuleMatches 0.3.1
+	Triage 2.0
+	RiskIQ_Trackers 1.0
+	Vulners_CVE 1.0
+	Splunk_Search_IP 3.0
+	TorBlutmagie 1.0
+	SpamAssassin 1.0
+	Splunk_Search_Domain_FQDN 3.0
+	MSDefender-IsolateMachine 1.0
+	RiskIQ_Reputation 1.0
+	FireHOLBlocklists 2.0
+	Vulners_IOC 1.0
+	RiskIQ_Artifacts 1.0
+	ThreatGrid 1.0
+	HarfangLab-GetBinary 1.0
+	HarfangLab-UnisolateHost 1.0
+	Robtex_Reverse_PDNS_Query 1.0
+	Gmail_UnblockDomain 1.0
+	CrowdStrikeFalcon_AddIOC 1.0
+	PassiveTotal_Ssl_Certificate_Details 2.0
+	CrowdstrikeFalcon_GetDeviceVulnerabilities 1.0
+	PaloAltoNGFW_block_internal_user 1.0.0
+	AMPforEndpoints_IsolationStart 1.0
+	Hashdd_Status 2.0
+	PaloAltoNGFW_unblock_port_for_external_communication 1.0.0
+	PaloAltoCortexXDR_unisolate 1.0
+	HarfangLab-GetArtifactFilesystem 1.0
+	PaloAltoNGFW_unblock_internal_IP_address 1.0.0
+	DNSDB_NameHistory 2.0
+	PhishingInitiative_Lookup 2.0
+	AMPforEndpoints_IsolationStop 1.0
+	CrowdStrikeFalcon_HostContainment 1.0
+	ONYPHE_Vulnscan 1.1
+	SoltraEdge 1.0
+	Pulsedive_GetIndicator 1.0
+	QRadar_Auto_Closing_Offense 1.0
+	IBMXForce_Lookup 1.0
+	Gmail_UnblockSender 1.0
+	Splunk_Search_URL_URI_Path 3.0
+	RiskIQ_HostpairChildren 1.0
+	IVRE 1.0
+	JoeSandbox_Url_Analysis 2.0
+	HarfangLab-DumpProcess 1.0
+	CISMCAP 1.0
+	Binalyze_AIR_Isolation 1.0
+	Malwares_Scan 1.0
+	Robtex_IP_Query 1.0
+	PaloAltoNGFW_unblock_external_user 1.0.0
+	HybridAnalysis_GetReport 1.0
+	DuoLockUserAccount 1.0
+	AMPforEndpoints_SCDRemove 1.0
+	ClamAV_FileInfo 1.1
+	CrowdStrikeFalcon_LiftContainmentHost 1.0
+	PaloAltoNGFW_block_port_for_internal_communication 2.0.0
+	HarfangLab-GetRunKeys 1.0
+	ForcepointWebsensePing 1.0
+	Shodan_Search 2.0
+	Umbrella_Report 1.0
+	Lookyloo_Screenshot 1.0
+	Slack_CreateChannel 1.0
+	PassiveTotal_Components 2.0
+	MetaDefenderCore_GetReport 1.0
+	Crowdsec_Analyzer 1.1
+	MalwareClustering_Search 1.0
+	Mnemonic_pDNS_Closed 3.0
+	C25CortexAnalyzer_Investigate 1.0
+	MSEntraID_ForcePasswordReset 1.0
+	Splunk_Search_File_Filename 3.0
+	HarfangLab-GetProcesses 1.0
+	UnshortenLink 1.2
+	CrowdstrikeFalcon_Sandbox_MacOS 1.0
+	HarfangLab-GetArtifactEvtx 1.0
+	n8n 1.0
+
+2025-09-20 10:07:09,735 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 20ms and returned 200 278 bytes
+2025-09-20 10:07:19,821 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:07:29,868 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:07:39,917 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:07:50,004 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 2ms and returned 200 278 bytes
+2025-09-20 10:08:00,088 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:08:10,166 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 2ms and returned 200 278 bytes
+2025-09-20 10:08:20,217 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:08:30,262 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:08:40,309 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:08:50,407 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:09:00,503 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 5ms and returned 200 278 bytes
+2025-09-20 10:09:10,570 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:09:20,619 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:09:30,661 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:09:40,708 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:09:50,752 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:10:00,800 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:10:10,847 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:10:20,894 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:10:30,972 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 2ms and returned 200 278 bytes
+2025-09-20 10:10:41,020 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:10:51,062 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:11:01,113 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:11:11,159 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:11:21,215 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:11:31,272 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:11:41,337 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 2ms and returned 200 278 bytes
+2025-09-20 10:11:51,395 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:12:01,443 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:12:11,494 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:12:21,542 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:12:31,587 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:12:41,633 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:12:51,681 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:13:01,735 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:13:11,783 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:13:21,836 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:13:31,885 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:13:41,939 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:13:51,991 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:14:02,043 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:14:12,097 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:14:22,146 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:14:32,187 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:14:42,230 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:14:52,292 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:15:02,341 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:15:12,396 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:15:22,459 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:15:32,520 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:15:42,568 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:15:52,613 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 2ms and returned 200 278 bytes
+2025-09-20 10:16:02,661 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:16:12,712 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:16:22,765 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:16:32,809 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:16:42,866 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:16:52,912 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:17:02,955 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:17:13,002 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:17:23,045 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:17:33,087 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:17:43,131 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:17:53,175 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:18:03,223 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:18:13,272 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:18:23,321 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:18:33,366 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:18:43,414 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:18:53,469 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:19:03,512 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:19:13,572 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:19:23,627 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:19:33,692 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:19:43,752 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:19:53,809 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 2ms and returned 200 278 bytes
+2025-09-20 10:20:03,865 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:20:13,916 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:20:23,979 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:20:34,025 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:20:44,069 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:20:54,121 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:21:04,167 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:21:14,215 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:21:24,262 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:21:34,307 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:21:44,349 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:21:54,395 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:22:04,483 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 3ms and returned 200 278 bytes
+2025-09-20 10:22:14,550 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:22:24,595 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:22:34,638 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:22:44,717 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:22:54,780 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:23:04,835 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:23:14,878 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:23:24,924 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:23:34,976 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:23:45,019 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:23:55,066 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:24:05,109 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:24:15,159 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:24:25,207 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:24:35,255 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:24:45,300 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:24:55,343 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:25:05,390 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:25:15,431 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:25:25,488 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:25:35,543 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:25:45,597 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:25:51,160 [INFO] from org.reflections.Reflections in main - Reflections took 128 ms to scan 2 urls, producing 102 keys and 701 values
+2025-09-20 10:25:51,173 [INFO] from module in main - Loading model class org.thp.cortex.models.OrganizationModel
+2025-09-20 10:25:51,175 [INFO] from module in main - Loading model class org.thp.cortex.models.JobModel
+2025-09-20 10:25:51,176 [INFO] from module in main - Loading model class org.elastic4play.services.AttachmentModel
+2025-09-20 10:25:51,176 [INFO] from module in main - Loading model class org.thp.cortex.models.WorkerModel
+2025-09-20 10:25:51,176 [INFO] from module in main - Loading model class org.thp.cortex.models.ArtifactModel
+2025-09-20 10:25:51,176 [INFO] from module in main - Loading model class org.thp.cortex.models.AuditModel
+2025-09-20 10:25:51,176 [INFO] from module in main - Loading model class org.elastic4play.services.DBListModel
+2025-09-20 10:25:51,176 [INFO] from module in main - Loading model class org.thp.cortex.models.UserModel
+2025-09-20 10:25:51,176 [INFO] from module in main - Loading model class org.thp.cortex.models.WorkerConfigModel
+2025-09-20 10:25:51,176 [INFO] from module in main - Loading model class org.thp.cortex.models.ReportModel
+2025-09-20 10:25:51,182 [INFO] from module in main - Loading authentication module class org.elastic4play.services.auth.ADAuthSrv
+2025-09-20 10:25:51,182 [INFO] from module in main - Loading authentication module class org.elastic4play.services.auth.LdapAuthSrv
+2025-09-20 10:25:51,182 [INFO] from module in main - Loading authentication module class org.thp.cortex.services.KeyAuthSrv
+2025-09-20 10:25:51,182 [INFO] from module in main - Loading authentication module class org.thp.cortex.services.LocalAuthSrv
+2025-09-20 10:25:51,182 [INFO] from module in main - Loading authentication module class org.thp.cortex.services.OAuth2Srv
+2025-09-20 10:25:52,106 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2025-09-20 10:25:53,324 [WARN] from org.thp.cortex.services.WorkerSrv in application-akka.actor.default-dispatcher-7 - Worker path (/opt/cortexneurons/responders) is not found
+java.net.MalformedURLException: no protocol: /opt/cortexneurons/responders
+	at java.base/java.net.URL.<init>(URL.java:645)
+	at java.base/java.net.URL.<init>(URL.java:541)
+	at java.base/java.net.URL.<init>(URL.java:488)
+	at org.thp.cortex.services.WorkerSrv.$anonfun$scan$21(WorkerSrv.scala:200)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:85)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2025-09-20 10:25:53,325 [WARN] from org.thp.cortex.services.WorkerSrv in application-akka.actor.default-dispatcher-5 - Worker path (/opt/cortexneurons/analyzers) is not found
+java.net.MalformedURLException: no protocol: /opt/cortexneurons/analyzers
+	at java.base/java.net.URL.<init>(URL.java:645)
+	at java.base/java.net.URL.<init>(URL.java:541)
+	at java.base/java.net.URL.<init>(URL.java:488)
+	at org.thp.cortex.services.WorkerSrv.$anonfun$scan$21(WorkerSrv.scala:200)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:85)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2025-09-20 10:25:54,353 [INFO] from org.thp.cortex.services.DockerJobRunnerSrv in main - Docker is available:
+Info{architecture=x86_64, clusterStore=null, cgroupDriver=systemd, containers=12, containersRunning=12, containersStopped=0, containersPaused=0, cpuCfsPeriod=true, cpuCfsQuota=true, debug=false, dockerRootDir=/var/lib/docker, storageDriver=overlay2, driverStatus=[[Backing Filesystem, extfs], [Supports d_type, true], [Using metacopy, true], [Native Overlay Diff, false], [userxattr, false]], executionDriver=null, experimentalBuild=false, httpProxy=, httpsProxy=, id=633ec6a4-9702-4642-998c-f0988d02adcf, ipv4Forwarding=true, images=24, indexServerAddress=https://index.docker.io/v1/, initPath=null, initSha1=null, kernelMemory=null, kernelVersion=6.16.7-2-cachyos, labels=[], memTotal=16591335424, memoryLimit=true, cpus=8, eventsListener=1, fileDescriptors=140, goroutines=141, name=bombsquad, noProxy=, oomKillDisable=false, operatingSystem=CachyOS, osType=linux, plugins=Plugins{volumes=[local], networks=[bridge, host, ipvlan, macvlan, null, overlay]}, registryConfig=RegistryConfig{indexConfigs={docker.io=IndexConfig{name=docker.io, mirrors=[], secure=true, official=true}}, insecureRegistryCidrs=[::1/128, 127.0.0.0/8]}, serverVersion=28.4.0, swapLimit=true, swarm=SwarmInfo{cluster=null, controlAvailable=false, error=, localNodeState=inactive, nodeAddr=, nodeId=, nodes=null, managers=null, remoteManagers=null}, systemStatus=[], systemTime=Sat Sep 20 10:25:54 UTC 2025}
+2025-09-20 10:25:54,365 [WARN] from org.thp.cortex.services.JobRunnerSrv in main - The package cortexutils for python hasn't been found
+2025-09-20 10:25:54,366 [WARN] from org.thp.cortex.services.JobRunnerSrv in main - The package cortexutils for python2 hasn't been found
+2025-09-20 10:25:54,367 [WARN] from org.thp.cortex.services.JobRunnerSrv in main - The package cortexutils for python3 hasn't been found
+2025-09-20 10:25:54,463 [INFO] from com.sksamuel.elastic4s.http.JavaClient$ in main - Creating HTTP client on http://elasticsearch:9200
+2025-09-20 10:25:54,665 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2025-09-20 10:25:54,761 [ERROR] from org.elastic4play.database.DBConfiguration in application-akka.actor.default-dispatcher-4 - ElasticSearch request failure: POST /cortex_6/_search?scroll=60000ms
+{"seq_no_primary_term":"true","query":{"bool":{"must":[{"term":{"relations":{"value":"job"}}},{"term":{"status":{"value":"Waiting"}}}]}},"from":0,"sort":[{"_doc":{"order":"desc"}}]}
+ => ElasticError(index_not_found_exception,no such index [cortex_6],Some(_na_),Some(cortex_6),None,List(ElasticError(index_not_found_exception,no such index [cortex_6],Some(_na_),Some(cortex_6),None,null,None,None,None,List())),None,None,None,List())
+2025-09-20 10:25:54,763 [WARN] from org.elastic4play.database.SearchWithScroll in application-akka.actor.default-dispatcher-8 - Search error
+org.elastic4play.IndexNotFoundException$: null
+	at org.elastic4play.IndexNotFoundException$.<clinit>(Errors.scala)
+	at org.elastic4play.database.DBConfiguration.$anonfun$execute$2(DBConfiguration.scala:155)
+	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:307)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:41)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:85)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2025-09-20 10:25:55,047 [INFO] from play.core.server.AkkaHttpServer in main - Enabling HTTP/2 on Akka HTTP server...
+2025-09-20 10:25:55,047 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9001
+2025-09-20 10:25:55,471 [INFO] from org.thp.cortex.services.WorkerSrv in application-akka.actor.default-dispatcher-8 - New worker list:
+
+	NERD 1.1
+	RiskIQ_Certificates 1.0
+	IPVoid 1.0
+	SEKOIAIntelligenceCenter_Indicators 1.0
+	RiskIQ_Projects 1.0
+	Shuffle 1.0
+	SEKOIAIntelligenceCenter_Context 1.0
+	CrowdStrikeFalcon_unsuppressDetections 1.0
+	HarfangLab-GetArtifactAll 1.0
+	RiskIQ_Cookies 1.0
+	HIBP_Query 2.0
+	CheckPoint_Unlock 1.0
+	DNSSinkhole 1.0
+	DomainToolsIris_Investigate 1.0
+	ThreatMiner 1.0
+	MSDefender-UnisolateMachine 1.0
+	Autofocus_SearchJSON 1.0
+	Gatewatcher_CTI_Identity 1.0
+	JAMFProtect_removeHashfromPreventList 1.0
+	DomainTools_Reputation 2.0
+	PaloAltoCortexXDR_isolate 1.0
+	AMPforEndpoints_SCDAdd 1.0
+	MaxMind_GeoIP 4.0
+	Watcher_RemoveDomain 1.2
+	Crowdstrike_Falcon_Custom_IOC_API 1.0
+	FileInfo 8.0
+	DuoBypassUserAccount 1.0
+	PaloAltoNGFW_block_external_user 1.0.0
+	SentinelOne_Hash_Blacklister 1.0
+	CheckPoint_Lock 1.0
+	FireEyeiSight 1.0
+	Malwares_GetReport 1.0
+	AWSLambda_InvokeFunction 1.0
+	JAMFProtect_addHashtoPreventList 1.0
+	Mnemonic_pDNS_Public 3.0
+	SEKOIAIntelligenceCenter_Observables 1.0
+	THOR_Thunderstorm_ScanSample 0.3.1
+	PaloAltoWildfire_URL_submission 1.0
+	Verifalia 1.0
+	MSEntraID_GetSignIns 1.0
+	RiskIQ_Articles 1.0
+	DomainTools_Risk 2.0
+	QrDecode 1.0
+	DomainMailSPFDMARC 1.1
+	EchoTrail 1.0
+	PassiveTotal_Osint 2.0
+	CIRCLPassiveDNS 2.0
+	CyberChef_FromHex 1.0
+	PaloAltoNGFW_block_port_for_external_communication 2.0.0
+	HarfangLab_SearchDriverByFileName 1.0
+	PassiveTotal_Passive_Dns 2.1
+	Shodan_Host 1.0
+	SendGrid 1.0
+	HarfangLab_SearchDriverByHash 1.0
+	DomainTools_WhoisLookupUnparsed 2.0
+	Hashdd_Detail 2.0
+	RiskIQ_Resolutions 1.0
+	Netcraft_TakedownPhishingURL 1.0
+	PassiveTotal_Host_Pairs 2.0
+	Hunterio_DomainSearch 1.0
+	LupovisProwl_GetIPReputation 1.1
+	CyberChef_FromCharCode 1.0
+	MISPWarningLists 2.0
+	Gmail_BlockDomain 1.0
+	EclecticIQ_Indicator_API 1.0
+	DomainTools_ReverseIPWhois 2.0
+	AbuseIPDB 1.0
+	TorProject 1.0
+	CrowdstrikeFalcon_Sandbox_Win7 1.0
+	RecordedFuture 2.0
+	HarfangLab-GetStartupFiles 1.0
+	CIRCLVulnerabilityLookup 1.0
+	Redmine_Issue 1.0
+	CIRCLPassiveSSL 2.0
+	Inoitsu 1.0
+	Splunk_Search_User_Agent 3.0
+	RiskIQ_HostpairParents 1.0
+	VirusTotal_Scan 3.1
+	HarfangLab-SearchHash 1.0
+	ChainAbuse 1.1
+	MSDefender-AutoInvestigation 1.0
+	MSEntraID_disableUser 1.0
+	EmergingThreats_DomainInfo 1.0
+	DNSDB_DomainName 2.0
+	AnyRun_Sandbox_Analysis 1.1
+	PhishTank_CheckURL 2.1
+	DNS-RPZ 1.0
+	MailIncidentStatus 1.0
+	Watcher_AddDomain 1.2
+	PaloAltoNGFW_block_internal_domain 2.0.0
+	StamusNetworks_HostID 1.0
+	IPinfo_Hosted_Domains 1.0
+	AWX_StartJob 1.0
+	RiskIQ_Subdomains 1.0
+	EmlParser 2.1
+	OktaUserLookup 1.0
+	MSDefender-PushIOC-Block 2.0
+	SpamhausDBL 1.0
+	SophosIntelix_GetReport 0.3
+	PassiveTotal_Trackers 2.0
+	ThreatResponse 1.0
+	MSEntraID_enableUser 1.0
+	MSEntraID_revokeSignInSessions 1.1
+	VirusTotal_GetReport 3.1
+	CrowdstrikeFalcon_Sandbox_Win7_64 1.0
+	Gmail_BlockSender 1.0
+	JA4_FoxIO 1.0
+	Maltiverse_Report 1.0
+	HarfangLab-GetPersistence 1.0
+	SophosIntelix_Submit_Dynamic 0.1
+	HarfangLab-SearchDestinationIP 1.0
+	ONYPHE_ASM 1.1
+	MSDefenderOffice365_unblock 1.0
+	BackscatterIO_GetObservations 1.0
+	OTXQuery 2.0
+	Investigate_Sample 1.0
+	PaloAltoNGFW_unblock_port_for_internal_communication 1.0.0
+	MetaDefenderCloud_Reputation 1.0
+	Autofocus_SearchIOC 1.0
+	Test 1.0
+	Capa 1.0
+	Splunk_Search_Mail_Email 3.0
+	CheckPhish 1.0
+	Patrowl_GetReport 1.0
+	NSRL 1.0
+	AMPforEndpoints_MoveGUID 1.0
+	RT4-CreateTicket 1.0
+	PhishingInitiative_Scan 1.0
+	Mailer 1.0
+	RiskIQ_Summary 1.0
+	C1fApp 1.0
+	MSDefenderOffice365_block 1.0
+	Zscaler 1.3
+	IP-API 1.1
+	OpenCTI_SearchObservables 2.0
+	Nessus 2.0
+	KnowBe4 1.0
+	Binalyze_AIR_Acquisition 1.0
+	SecurityTrails_Passive_DNS 1.0
+	Cylance 1.0
+	SentinelOne_DeepVisibility_DNSQuery 1.0
+	HarfangLab-GetSessions 1.0
+	Virusshare 2.0
+	Cloudflare_IP_Blocker 1.0
+	CrowdStrikeFalcon_suppressDetections 1.0
+	HarfangLab-GetScheduledTasks 1.0
+	Velociraptor_Flow 0.1
+	DomainTools_ReverseIP 2.0
+	Yeti 1.0
+	StaxxSearch 1.0
+	PaloAltoNGFW_unblock_external_domain 1.0.0
+	SinkDB 1.1
+	PaloAltoNGFW_unblock_external_IP_address 1.0.0
+	MalwareBazaar 1.0
+	DomainToolsIris_AddRiskyDNSTag 1.0
+	Robtex_Forward_PDNS_Query 1.0
+	CheckPhish_Submit 1.0
+	RiskIQ_Services 1.0
+	HarfangLab-GetDrivers 1.0
+	HarfangLab-GetWMI 1.0
+	ONYPHE_OnDemandScan 1.0
+	CrowdStrikeFalcon_RemoveIOC 1.0
+	MSDefender-PushIOC-Alert 2.0
+	MSEntraID_GetUserInfo 1.0
+	WOT_Lookup 2.0
+	JoeSandbox_File_Analysis_Inet 3.0
+	CrowdstrikeFalcon_Sandbox_Linux 1.0
+	RiskIQ_Whois 1.0
+	Yara 3.0
+	Ldap_Query 3.0
+	JoeSandbox_File_Analysis_Noinet 3.0
+	HarfangLab-GetPrefetches 1.0
+	Elasticsearch_Analysis 1.0
+	ONYPHE_Search 1.1
+	Splunk_Search_Hash 3.0
+	Autofocus_GetSampleAnalysis 1.0
+	HarfangLab-KillProcess 1.0
+	Virustotal_Downloader 0.1
+	DuoUnlockUserAccount 1.0
+	PaloAltoNGFW_unblock_internal_user 1.0.0
+	ONYPHE_Summary_API 1.2
+	Axur 1.0
+	EmergingThreats_IPInfo 1.0
+	Shodan_ReverseDNS 1.0
+	Shodan_Host_History 1.0
+	HarfangLab-GetServices 1.0
+	Wazuh 1.0
+	PassiveTotal_Whois_Details 2.0
+	MSDefender-RestrictAppExecution 1.0
+	Urlscan.io_Search 0.1.1
+	CrowdstrikeFalcon_getDeviceDetails 1.0
+	Jupyter_Run_Notebook_Responder 1.0
+	CIRCLHashlookup 1.1
+	ValidateObservable 1.0
+	CrowdStrikeFalcon_hideHost 1.0
+	PaloAltoNGFW_block_external_IP_address 2.0.0
+	DomainTools_WhoisLookup 2.0
+	PaloAltoNGFW_block_internal_IP_address 2.0.0
+	HarfangLab-GetArtifactRamdump 1.0
+	GRR 0.1
+	Censys 2.0
+	Cyberprotect_ThreatScore 3.0
+	PaloAltoNGFW_block_external_domain 2.0.0
+	MSEntraID_GetDirectoryAuditLogs 1.0
+	ZEROFOX_Close_alert 1.0
+	Minemeld 1.0
+	PassiveTotal_Malware 2.0
+	DomainTools_ReverseNameServer 2.0
+	CrowdstrikeFalcon_Sandbox_Win10 1.0
+	IntezerCommunity 1.0
+	DNSDB_IPHistory 2.0
+	PaloAltoNGFW_unblock_internal_domain 1.0.0
+	HarfangLab-IsolateHost 1.0
+	GoogleSafebrowsing 2.0
+	PassiveTotal_Enrichment 2.0
+	TestAnalyzer 1.0
+	PayloadSecurity_File_Analysis 1.0
+	CrowdstrikeFalcon_Sandbox_Win11 1.0
+	Msg_Parser 3.0
+	DNSdumpster_report 1.0
+	PaloAltoWildFire 1.0
+	CrowdstrikeFalcon_getDeviceAlerts 1.0
+	PassiveTotal_Unique_Resolutions 2.0
+	Splunk_Search_User 3.0
+	GreyNoise 3.2
+	RiskIQ_PushArtifactToProject 1.0
+	CuckooSandbox_Url_Analysis 1.2
+	BackscatterIO_Enrichment 1.0
+	CrowdStrikeFalcon_Sync 1.0
+	DomainTools_ReverseWhois 2.0
+	SophosIntelix_Submit_Static 0.1
+	Umbrella_Blacklister 1.1
+	ONYPHE_Ctiscan 1.0
+	ZEROFOX_Takedown_request 1.0
+	CyberCrime-Tracker 1.0
+	Gmail_DeleteMessage 1.0
+	EmailRep 1.0
+	KasperskyThreatIntelligencePortal 1.0
+	URLhaus 2.0
+	MISP 2.1
+	TeamCymruMHR 1.0
+	DShield_lookup 1.0
+	EmergingThreats_MalwareInfo 1.0
+	StopForumSpam 1.0
+	DomainTools_HostingHistory 2.0
+	Gatewatcher_CTI 2.0
+	EclecticIQ_SearchObservable 2.0
+	CyberChef_FromBase64 1.0
+	MSEntraID_ForcePasswordResetWithMFA 1.0
+	VirusTotal_Rescan 3.1
+	Telegram 1.0
+	Abuse_Finder 3.0
+	MSEntraID_GetManagedDevicesInfo 1.0
+	Investigate_Categorization 1.0
+	HarfangLab-GetArtifactMFT 1.0
+	HarfangLab-SearchSourceIP 1.0
+	HarfangLab-GetPipes 1.0
+	SecurityTrails_Whois 1.0
+	DomainTools_WhoisHistory 2.0
+	VirusTotal_DownloadSample 3.1
+	Watcher_CheckDomain 1.3
+	MetaDefenderCloud_Scan 1.0
+	PassiveTotal_Ssl_Certificate_History 2.0
+	HarfangLab-GetArtifactUSN 1.0
+	CrowdstrikeFalcon_Sandbox_Android 1.0
+	HarfangLab-GetArtifactPrefetch 1.0
+	Splunk_Search_Other 3.0
+	Malpedia 1.0
+	MetaDefenderCore_Scan 1.0
+	CrowdStrikeFalcon_unhideHost 1.0
+	Splunk_Search_Registry 3.0
+	RiskIQ_Malware 1.0
+	Crt_sh_Transparency_Logs 1.0
+	PaloAltoCortexXDR_scan 1.0
+	IPinfo_Details 1.0
+	CERTatPassiveDNS 2.0
+	Urlscan.io_Scan 0.1.0
+	RiskIQ_Components 1.0
+	HarfangLab-GetNetworkShares 1.0
+	DomainToolsIris_CheckMaliciousTags 1.0
+	MSDefender-UnRestrictAppExecution 1.0
+	ProofPoint_Lookup 1.0
+	PayloadSecurity_Url_Analysis 1.0
+	HarfangLab-GetArtifactLogs 1.0
+	MSDefender-FullVirusscan 1.0
+	Shodan_DNSResolve 1.0
+	Splunk_Search_Mail_Subject 3.0
+	VMRay 4.1
+	GoogleDNS_resolve 1.0.0
+	DomainToolsIris_Pivot 1.0
+	MetaDefenderCloud_GetReport 1.0
+	FalconSandbox 1.0
+	OpenCTI_SearchExactObservable 2.0
+	Shodan_InfoDomain 1.0
+	CuckooSandbox_File_Analysis_Inet 1.2
+	Crowdstrike_Falcon_Custom_IOC 2.0
+	HarfangLab-GetArtifactHives 1.0
+	DNS_Lookingglass 1.0
+	Jupyter_Run_Notebook_Analyzer 1.0
+	GoogleVisionAPI_WebDetection 1.0.0
+	Valhalla_GetRuleMatches 0.3.1
+	Triage 2.0
+	RiskIQ_Trackers 1.0
+	Vulners_CVE 1.0
+	Splunk_Search_IP 3.0
+	TorBlutmagie 1.0
+	SpamAssassin 1.0
+	Splunk_Search_Domain_FQDN 3.0
+	MSDefender-IsolateMachine 1.0
+	RiskIQ_Reputation 1.0
+	FireHOLBlocklists 2.0
+	Vulners_IOC 1.0
+	RiskIQ_Artifacts 1.0
+	ThreatGrid 1.0
+	HarfangLab-GetBinary 1.0
+	HarfangLab-UnisolateHost 1.0
+	Robtex_Reverse_PDNS_Query 1.0
+	Gmail_UnblockDomain 1.0
+	CrowdStrikeFalcon_AddIOC 1.0
+	PassiveTotal_Ssl_Certificate_Details 2.0
+	CrowdstrikeFalcon_GetDeviceVulnerabilities 1.0
+	PaloAltoNGFW_block_internal_user 1.0.0
+	AMPforEndpoints_IsolationStart 1.0
+	Hashdd_Status 2.0
+	PaloAltoNGFW_unblock_port_for_external_communication 1.0.0
+	PaloAltoCortexXDR_unisolate 1.0
+	HarfangLab-GetArtifactFilesystem 1.0
+	PaloAltoNGFW_unblock_internal_IP_address 1.0.0
+	DNSDB_NameHistory 2.0
+	PhishingInitiative_Lookup 2.0
+	AMPforEndpoints_IsolationStop 1.0
+	CrowdStrikeFalcon_HostContainment 1.0
+	ONYPHE_Vulnscan 1.1
+	SoltraEdge 1.0
+	Pulsedive_GetIndicator 1.0
+	QRadar_Auto_Closing_Offense 1.0
+	IBMXForce_Lookup 1.0
+	Gmail_UnblockSender 1.0
+	Splunk_Search_URL_URI_Path 3.0
+	RiskIQ_HostpairChildren 1.0
+	IVRE 1.0
+	JoeSandbox_Url_Analysis 2.0
+	HarfangLab-DumpProcess 1.0
+	CISMCAP 1.0
+	Binalyze_AIR_Isolation 1.0
+	Malwares_Scan 1.0
+	Robtex_IP_Query 1.0
+	PaloAltoNGFW_unblock_external_user 1.0.0
+	HybridAnalysis_GetReport 1.0
+	DuoLockUserAccount 1.0
+	AMPforEndpoints_SCDRemove 1.0
+	ClamAV_FileInfo 1.1
+	CrowdStrikeFalcon_LiftContainmentHost 1.0
+	PaloAltoNGFW_block_port_for_internal_communication 2.0.0
+	HarfangLab-GetRunKeys 1.0
+	ForcepointWebsensePing 1.0
+	Shodan_Search 2.0
+	Umbrella_Report 1.0
+	Lookyloo_Screenshot 1.0
+	Slack_CreateChannel 1.0
+	PassiveTotal_Components 2.0
+	MetaDefenderCore_GetReport 1.0
+	Crowdsec_Analyzer 1.1
+	MalwareClustering_Search 1.0
+	Mnemonic_pDNS_Closed 3.0
+	C25CortexAnalyzer_Investigate 1.0
+	MSEntraID_ForcePasswordReset 1.0
+	Splunk_Search_File_Filename 3.0
+	HarfangLab-GetProcesses 1.0
+	UnshortenLink 1.2
+	CrowdstrikeFalcon_Sandbox_MacOS 1.0
+	HarfangLab-GetArtifactEvtx 1.0
+	n8n 1.0
+
+2025-09-20 10:25:59,021 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 172.20.0.4 GET /cortex/api/status took 21ms and returned 200 278 bytes
+2025-09-20 10:25:59,066 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 172.20.0.1 GET /cortex/index.html took 57ms and returned 200 1254 bytes
+2025-09-20 10:25:59,121 [INFO] from com.sksamuel.elastic4s.http.JavaClient$ in application-akka.actor.default-dispatcher-15 - Creating HTTP client on http://elasticsearch:9200
+2025-09-20 10:25:59,125 [INFO] from com.sksamuel.elastic4s.http.JavaClient$ in application-akka.actor.default-dispatcher-15 - Creating HTTP client on http://elasticsearch:9200
+2025-09-20 10:25:59,129 [INFO] from com.sksamuel.elastic4s.http.JavaClient$ in application-akka.actor.default-dispatcher-15 - Creating HTTP client on http://elasticsearch:9200
+2025-09-20 10:25:59,133 [INFO] from com.sksamuel.elastic4s.http.JavaClient$ in application-akka.actor.default-dispatcher-15 - Creating HTTP client on http://elasticsearch:9200
+2025-09-20 10:25:59,139 [INFO] from com.sksamuel.elastic4s.http.JavaClient$ in application-akka.actor.default-dispatcher-15 - Creating HTTP client on http://elasticsearch:9200
+2025-09-20 10:25:59,146 [INFO] from org.elastic4play.services.MigrationSrv in application-akka.actor.default-dispatcher-15 - Create a new empty database
+2025-09-20 10:25:59,146 [INFO] from org.elastic4play.services.MigrationSrv in application-akka.actor.default-dispatcher-15 - Migrate database from version 0, add operations for version 2
+2025-09-20 10:25:59,152 [INFO] from org.elastic4play.services.MigrationSrv in application-akka.actor.default-dispatcher-15 - Migrate database from version 0, add operations for version 3
+2025-09-20 10:25:59,152 [INFO] from org.elastic4play.services.MigrationSrv in application-akka.actor.default-dispatcher-15 - Migrate database from version 0, add operations for version 4
+2025-09-20 10:25:59,152 [INFO] from org.elastic4play.services.MigrationSrv in application-akka.actor.default-dispatcher-15 - Migrate database from version 0, add operations for version 5
+2025-09-20 10:25:59,153 [INFO] from org.elastic4play.services.MigrationSrv in application-akka.actor.default-dispatcher-15 - Migrate database from version 0, add operations for version 6
+2025-09-20 10:25:59,425 [WARN] from org.elasticsearch.client.RestClient in I/O dispatcher 1 - request [PUT http://elasticsearch:9200/cortex_6?include_type_name=false] returned 1 warnings: [299 Elasticsearch-7.17.28-139cb5a961d8de68b8e02c45cc47f5289a3623af "[types removal] Using include_type_name in create index requests is deprecated. The parameter will be removed in the next major version."]
+2025-09-20 10:25:59,434 [INFO] from org.elastic4play.services.MigrationSrv in application-akka.actor.default-dispatcher-15 - Migrating 0 entities from sequence
+2025-09-20 10:25:59,453 [INFO] from org.elastic4play.services.MigrationSrv in application-akka.actor.default-dispatcher-15 - Migrating 0 entities from artifact
+2025-09-20 10:25:59,454 [INFO] from org.elastic4play.services.MigrationSrv in application-akka.actor.default-dispatcher-15 - Migrating 0 entities from audit
+2025-09-20 10:25:59,456 [INFO] from org.elastic4play.services.MigrationSrv in application-akka.actor.default-dispatcher-15 - Migrating 0 entities from data
+2025-09-20 10:25:59,457 [INFO] from org.elastic4play.services.MigrationSrv in application-akka.actor.default-dispatcher-15 - Migrating 0 entities from dblist
+2025-09-20 10:25:59,457 [INFO] from org.elastic4play.services.MigrationSrv in application-akka.actor.default-dispatcher-15 - Migrating 0 entities from job
+2025-09-20 10:25:59,459 [INFO] from org.elastic4play.services.MigrationSrv in application-akka.actor.default-dispatcher-15 - Migrating 0 entities from organization
+2025-09-20 10:25:59,460 [INFO] from org.elastic4play.services.MigrationSrv in application-akka.actor.default-dispatcher-15 - Migrating 0 entities from report
+2025-09-20 10:25:59,461 [INFO] from org.elastic4play.services.MigrationSrv in application-akka.actor.default-dispatcher-15 - Migrating 0 entities from user
+2025-09-20 10:25:59,462 [INFO] from org.elastic4play.services.MigrationSrv in application-akka.actor.default-dispatcher-15 - Migrating 0 entities from worker
+2025-09-20 10:25:59,463 [INFO] from org.elastic4play.services.MigrationSrv in application-akka.actor.default-dispatcher-15 - Migrating 0 entities from workerConfig
+2025-09-20 10:26:00,337 [INFO] from org.elastic4play.services.MigrationSrv in application-akka.actor.default-dispatcher-7 - End of migration
+2025-09-20 10:26:00,338 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.1 POST /cortex/api/maintenance/migrate took 1227ms and returned 204 0 bytes
+2025-09-20 10:26:02,386 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.1 POST /cortex/api/user took 2024ms and returned 201 261 bytes
+2025-09-20 10:26:03,346 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.1 POST /cortex/api/organization took 939ms and returned 201 222 bytes
+2025-09-20 10:26:05,356 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 172.20.0.1 POST /cortex/api/user took 1849ms and returned 201 283 bytes
+2025-09-20 10:26:06,363 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 172.20.0.1 POST /cortex/api/user/thehive/key/renew took 987ms and returned 200 32 bytes
+2025-09-20 10:26:06,418 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.1 GET /cortex/api/user/thehive took 31ms and returned 200 327 bytes
+2025-09-20 10:26:07,367 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.1 POST /cortex/api/organization/analyzer/Abuse_Finder_3_0 took 931ms and returned 201 713 bytes
+2025-09-20 10:26:08,372 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 172.20.0.1 POST /cortex/api/organization/analyzer/CIRCLHashlookup_1_1 took 988ms and returned 201 718 bytes
+2025-09-20 10:26:09,106 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:26:09,377 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 172.20.0.1 POST /cortex/api/organization/analyzer/CyberCrime-Tracker_1_0 took 991ms and returned 201 701 bytes
+2025-09-20 10:26:10,382 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 172.20.0.1 POST /cortex/api/organization/analyzer/DomainMailSPFDMARC_1_1 took 988ms and returned 201 640 bytes
+2025-09-20 10:26:11,388 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.1 POST /cortex/api/organization/analyzer/DShield_lookup_1_0 took 988ms and returned 201 687 bytes
+2025-09-20 10:26:12,421 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.1 POST /cortex/api/organization/analyzer/FileInfo_8_0 took 1017ms and returned 201 727 bytes
+2025-09-20 10:26:13,429 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.1 POST /cortex/api/organization/analyzer/EmlParser_2_1 took 993ms and returned 201 680 bytes
+2025-09-20 10:26:13,455 [WARN] from org.thp.cortex.services.ErrorHandler in application-akka.actor.default-dispatcher-6 - POST /cortex/api/organization/analyzer/Fortiguard_URLCategory_2_1 returned 404
+2025-09-20 10:26:13,456 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.1 POST /cortex/api/organization/analyzer/Fortiguard_URLCategory_2_1 took 6ms and returned 404 80 bytes
+2025-09-20 10:26:14,434 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.1 POST /cortex/api/organization/analyzer/GoogleDNS_resolve_1_0_0 took 962ms and returned 201 686 bytes
+2025-09-20 10:26:15,455 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 172.20.0.1 POST /cortex/api/organization/analyzer/Inoitsu_1_0 took 1005ms and returned 201 633 bytes
+2025-09-20 10:26:16,456 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.1 POST /cortex/api/organization/analyzer/MaxMind_GeoIP_4_0 took 949ms and returned 201 643 bytes
+2025-09-20 10:26:17,474 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.1 POST /cortex/api/organization/analyzer/Maltiverse_Report_1_0 took 1002ms and returned 201 713 bytes
+2025-09-20 10:26:18,475 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.1 POST /cortex/api/organization/analyzer/StopForumSpam_1_0 took 968ms and returned 201 732 bytes
+2025-09-20 10:26:19,154 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:26:19,478 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 172.20.0.1 POST /cortex/api/organization/analyzer/TeamCymruMHR_1_0 took 990ms and returned 201 686 bytes
+2025-09-20 10:26:19,496 [WARN] from org.thp.cortex.services.ErrorHandler in application-akka.actor.default-dispatcher-6 - POST /cortex/api/organization/analyzer/Threatcrowd_1_0 returned 404
+2025-09-20 10:26:19,496 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.1 POST /cortex/api/organization/analyzer/Threatcrowd_1_0 took 4ms and returned 404 69 bytes
+2025-09-20 10:26:20,482 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 172.20.0.1 POST /cortex/api/organization/analyzer/UnshortenLink_1_2 took 971ms and returned 201 666 bytes
+2025-09-20 10:26:20,504 [ERROR] from org.thp.cortex.services.ErrorHandler in application-akka.actor.default-dispatcher-8 - Internal error
+org.elastic4play.MissingAttributeError: Attribute API_Key is missing
+	at org.thp.cortex.models.ConfigurationDefinitionItem.$anonfun$read$6(WorkerDefinition.scala:58)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.thp.cortex.models.ConfigurationDefinitionItem.read(WorkerDefinition.scala:57)
+	at org.thp.cortex.services.WorkerSrv.$anonfun$create$3(WorkerSrv.scala:229)
+	at org.scalactic.Accumulation$$anon$10.$anonfun$validatedBy$1(Accumulation.scala:335)
+	at scala.collection.TraversableOnce$folder$1.apply(TraversableOnce.scala:196)
+	at scala.collection.TraversableOnce$folder$1.apply(TraversableOnce.scala:194)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.collection.TraversableOnce.foldLeft(TraversableOnce.scala:199)
+	at scala.collection.TraversableOnce.foldLeft$(TraversableOnce.scala:192)
+	at scala.collection.AbstractTraversable.foldLeft(Traversable.scala:108)
+	at org.scalactic.Accumulation$$anon$10.validatedBy(Accumulation.scala:334)
+	at org.thp.cortex.services.WorkerSrv.create(WorkerSrv.scala:229)
+	at org.thp.cortex.services.WorkerSrv.$anonfun$create$13(WorkerSrv.scala:268)
+	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:307)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:41)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:85)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2025-09-20 10:26:20,504 [WARN] from org.thp.cortex.services.ErrorHandler in application-akka.actor.default-dispatcher-8 - POST /cortex/api/organization/analyzer/URLhaus_2_0 returned 500
+2025-09-20 10:26:20,504 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 172.20.0.1 POST /cortex/api/organization/analyzer/URLhaus_2_0 took 8ms and returned 500 90 bytes
+2025-09-20 10:26:21,486 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.1 POST /cortex/api/organization/analyzer/Urlscan_io_Search_0_1_1 took 966ms and returned 201 720 bytes
+2025-09-20 10:26:29,208 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:26:35,612 [INFO] from org.reflections.Reflections in main - Reflections took 174 ms to scan 2 urls, producing 102 keys and 701 values
+2025-09-20 10:26:35,631 [INFO] from module in main - Loading model class org.thp.cortex.models.OrganizationModel
+2025-09-20 10:26:35,635 [INFO] from module in main - Loading model class org.thp.cortex.models.JobModel
+2025-09-20 10:26:35,636 [INFO] from module in main - Loading model class org.elastic4play.services.AttachmentModel
+2025-09-20 10:26:35,636 [INFO] from module in main - Loading model class org.thp.cortex.models.WorkerModel
+2025-09-20 10:26:35,636 [INFO] from module in main - Loading model class org.thp.cortex.models.ArtifactModel
+2025-09-20 10:26:35,636 [INFO] from module in main - Loading model class org.thp.cortex.models.AuditModel
+2025-09-20 10:26:35,636 [INFO] from module in main - Loading model class org.elastic4play.services.DBListModel
+2025-09-20 10:26:35,636 [INFO] from module in main - Loading model class org.thp.cortex.models.UserModel
+2025-09-20 10:26:35,637 [INFO] from module in main - Loading model class org.thp.cortex.models.WorkerConfigModel
+2025-09-20 10:26:35,637 [INFO] from module in main - Loading model class org.thp.cortex.models.ReportModel
+2025-09-20 10:26:35,646 [INFO] from module in main - Loading authentication module class org.elastic4play.services.auth.ADAuthSrv
+2025-09-20 10:26:35,646 [INFO] from module in main - Loading authentication module class org.elastic4play.services.auth.LdapAuthSrv
+2025-09-20 10:26:35,646 [INFO] from module in main - Loading authentication module class org.thp.cortex.services.KeyAuthSrv
+2025-09-20 10:26:35,646 [INFO] from module in main - Loading authentication module class org.thp.cortex.services.LocalAuthSrv
+2025-09-20 10:26:35,646 [INFO] from module in main - Loading authentication module class org.thp.cortex.services.OAuth2Srv
+2025-09-20 10:26:37,099 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2025-09-20 10:26:38,779 [WARN] from org.thp.cortex.services.WorkerSrv in application-akka.actor.default-dispatcher-5 - Worker path (/opt/cortexneurons/analyzers) is not found
+java.net.MalformedURLException: no protocol: /opt/cortexneurons/analyzers
+	at java.base/java.net.URL.<init>(URL.java:645)
+	at java.base/java.net.URL.<init>(URL.java:541)
+	at java.base/java.net.URL.<init>(URL.java:488)
+	at org.thp.cortex.services.WorkerSrv.$anonfun$scan$21(WorkerSrv.scala:200)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:85)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2025-09-20 10:26:38,785 [WARN] from org.thp.cortex.services.WorkerSrv in application-akka.actor.default-dispatcher-7 - Worker path (/opt/cortexneurons/responders) is not found
+java.net.MalformedURLException: no protocol: /opt/cortexneurons/responders
+	at java.base/java.net.URL.<init>(URL.java:645)
+	at java.base/java.net.URL.<init>(URL.java:541)
+	at java.base/java.net.URL.<init>(URL.java:488)
+	at org.thp.cortex.services.WorkerSrv.$anonfun$scan$21(WorkerSrv.scala:200)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:85)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2025-09-20 10:26:40,414 [INFO] from org.thp.cortex.services.DockerJobRunnerSrv in main - Docker is available:
+Info{architecture=x86_64, clusterStore=null, cgroupDriver=systemd, containers=12, containersRunning=12, containersStopped=0, containersPaused=0, cpuCfsPeriod=true, cpuCfsQuota=true, debug=false, dockerRootDir=/var/lib/docker, storageDriver=overlay2, driverStatus=[[Backing Filesystem, extfs], [Supports d_type, true], [Using metacopy, true], [Native Overlay Diff, false], [userxattr, false]], executionDriver=null, experimentalBuild=false, httpProxy=, httpsProxy=, id=633ec6a4-9702-4642-998c-f0988d02adcf, ipv4Forwarding=true, images=24, indexServerAddress=https://index.docker.io/v1/, initPath=null, initSha1=null, kernelMemory=null, kernelVersion=6.16.7-2-cachyos, labels=[], memTotal=16591335424, memoryLimit=true, cpus=8, eventsListener=1, fileDescriptors=140, goroutines=141, name=bombsquad, noProxy=, oomKillDisable=false, operatingSystem=CachyOS, osType=linux, plugins=Plugins{volumes=[local], networks=[bridge, host, ipvlan, macvlan, null, overlay]}, registryConfig=RegistryConfig{indexConfigs={docker.io=IndexConfig{name=docker.io, mirrors=[], secure=true, official=true}}, insecureRegistryCidrs=[::1/128, 127.0.0.0/8]}, serverVersion=28.4.0, swapLimit=true, swarm=SwarmInfo{cluster=null, controlAvailable=false, error=, localNodeState=inactive, nodeAddr=, nodeId=, nodes=null, managers=null, remoteManagers=null}, systemStatus=[], systemTime=Sat Sep 20 10:26:40 UTC 2025}
+2025-09-20 10:26:40,429 [WARN] from org.thp.cortex.services.JobRunnerSrv in main - The package cortexutils for python hasn't been found
+2025-09-20 10:26:40,430 [WARN] from org.thp.cortex.services.JobRunnerSrv in main - The package cortexutils for python2 hasn't been found
+2025-09-20 10:26:40,431 [WARN] from org.thp.cortex.services.JobRunnerSrv in main - The package cortexutils for python3 hasn't been found
+2025-09-20 10:26:40,568 [INFO] from com.sksamuel.elastic4s.http.JavaClient$ in main - Creating HTTP client on http://elasticsearch:9200
+2025-09-20 10:26:40,874 [INFO] from play.api.Play in main - Application started (Prod) (no global state)
+2025-09-20 10:26:41,709 [INFO] from org.thp.cortex.services.WorkerSrv in application-akka.actor.default-dispatcher-7 - New worker list:
+
+	NERD 1.1
+	RiskIQ_Certificates 1.0
+	IPVoid 1.0
+	SEKOIAIntelligenceCenter_Indicators 1.0
+	RiskIQ_Projects 1.0
+	Shuffle 1.0
+	SEKOIAIntelligenceCenter_Context 1.0
+	CrowdStrikeFalcon_unsuppressDetections 1.0
+	HarfangLab-GetArtifactAll 1.0
+	RiskIQ_Cookies 1.0
+	HIBP_Query 2.0
+	CheckPoint_Unlock 1.0
+	DNSSinkhole 1.0
+	DomainToolsIris_Investigate 1.0
+	ThreatMiner 1.0
+	MSDefender-UnisolateMachine 1.0
+	Autofocus_SearchJSON 1.0
+	Gatewatcher_CTI_Identity 1.0
+	JAMFProtect_removeHashfromPreventList 1.0
+	DomainTools_Reputation 2.0
+	PaloAltoCortexXDR_isolate 1.0
+	AMPforEndpoints_SCDAdd 1.0
+	MaxMind_GeoIP 4.0
+	Watcher_RemoveDomain 1.2
+	Crowdstrike_Falcon_Custom_IOC_API 1.0
+	FileInfo 8.0
+	DuoBypassUserAccount 1.0
+	PaloAltoNGFW_block_external_user 1.0.0
+	SentinelOne_Hash_Blacklister 1.0
+	CheckPoint_Lock 1.0
+	FireEyeiSight 1.0
+	Malwares_GetReport 1.0
+	AWSLambda_InvokeFunction 1.0
+	JAMFProtect_addHashtoPreventList 1.0
+	Mnemonic_pDNS_Public 3.0
+	SEKOIAIntelligenceCenter_Observables 1.0
+	THOR_Thunderstorm_ScanSample 0.3.1
+	PaloAltoWildfire_URL_submission 1.0
+	Verifalia 1.0
+	MSEntraID_GetSignIns 1.0
+	RiskIQ_Articles 1.0
+	DomainTools_Risk 2.0
+	QrDecode 1.0
+	DomainMailSPFDMARC 1.1
+	EchoTrail 1.0
+	PassiveTotal_Osint 2.0
+	CIRCLPassiveDNS 2.0
+	CyberChef_FromHex 1.0
+	PaloAltoNGFW_block_port_for_external_communication 2.0.0
+	HarfangLab_SearchDriverByFileName 1.0
+	PassiveTotal_Passive_Dns 2.1
+	Shodan_Host 1.0
+	SendGrid 1.0
+	HarfangLab_SearchDriverByHash 1.0
+	DomainTools_WhoisLookupUnparsed 2.0
+	Hashdd_Detail 2.0
+	RiskIQ_Resolutions 1.0
+	Netcraft_TakedownPhishingURL 1.0
+	PassiveTotal_Host_Pairs 2.0
+	Hunterio_DomainSearch 1.0
+	LupovisProwl_GetIPReputation 1.1
+	CyberChef_FromCharCode 1.0
+	MISPWarningLists 2.0
+	Gmail_BlockDomain 1.0
+	EclecticIQ_Indicator_API 1.0
+	DomainTools_ReverseIPWhois 2.0
+	AbuseIPDB 1.0
+	TorProject 1.0
+	CrowdstrikeFalcon_Sandbox_Win7 1.0
+	RecordedFuture 2.0
+	HarfangLab-GetStartupFiles 1.0
+	CIRCLVulnerabilityLookup 1.0
+	Redmine_Issue 1.0
+	CIRCLPassiveSSL 2.0
+	Inoitsu 1.0
+	Splunk_Search_User_Agent 3.0
+	RiskIQ_HostpairParents 1.0
+	VirusTotal_Scan 3.1
+	HarfangLab-SearchHash 1.0
+	ChainAbuse 1.1
+	MSDefender-AutoInvestigation 1.0
+	MSEntraID_disableUser 1.0
+	EmergingThreats_DomainInfo 1.0
+	DNSDB_DomainName 2.0
+	AnyRun_Sandbox_Analysis 1.1
+	PhishTank_CheckURL 2.1
+	DNS-RPZ 1.0
+	MailIncidentStatus 1.0
+	Watcher_AddDomain 1.2
+	PaloAltoNGFW_block_internal_domain 2.0.0
+	StamusNetworks_HostID 1.0
+	IPinfo_Hosted_Domains 1.0
+	AWX_StartJob 1.0
+	RiskIQ_Subdomains 1.0
+	EmlParser 2.1
+	OktaUserLookup 1.0
+	MSDefender-PushIOC-Block 2.0
+	SpamhausDBL 1.0
+	SophosIntelix_GetReport 0.3
+	PassiveTotal_Trackers 2.0
+	ThreatResponse 1.0
+	MSEntraID_enableUser 1.0
+	MSEntraID_revokeSignInSessions 1.1
+	VirusTotal_GetReport 3.1
+	CrowdstrikeFalcon_Sandbox_Win7_64 1.0
+	Gmail_BlockSender 1.0
+	JA4_FoxIO 1.0
+	Maltiverse_Report 1.0
+	HarfangLab-GetPersistence 1.0
+	SophosIntelix_Submit_Dynamic 0.1
+	HarfangLab-SearchDestinationIP 1.0
+	ONYPHE_ASM 1.1
+	MSDefenderOffice365_unblock 1.0
+	BackscatterIO_GetObservations 1.0
+	OTXQuery 2.0
+	Investigate_Sample 1.0
+	PaloAltoNGFW_unblock_port_for_internal_communication 1.0.0
+	MetaDefenderCloud_Reputation 1.0
+	Autofocus_SearchIOC 1.0
+	Test 1.0
+	Capa 1.0
+	Splunk_Search_Mail_Email 3.0
+	CheckPhish 1.0
+	Patrowl_GetReport 1.0
+	NSRL 1.0
+	AMPforEndpoints_MoveGUID 1.0
+	RT4-CreateTicket 1.0
+	PhishingInitiative_Scan 1.0
+	Mailer 1.0
+	RiskIQ_Summary 1.0
+	C1fApp 1.0
+	MSDefenderOffice365_block 1.0
+	Zscaler 1.3
+	IP-API 1.1
+	OpenCTI_SearchObservables 2.0
+	Nessus 2.0
+	KnowBe4 1.0
+	Binalyze_AIR_Acquisition 1.0
+	SecurityTrails_Passive_DNS 1.0
+	Cylance 1.0
+	SentinelOne_DeepVisibility_DNSQuery 1.0
+	HarfangLab-GetSessions 1.0
+	Virusshare 2.0
+	Cloudflare_IP_Blocker 1.0
+	CrowdStrikeFalcon_suppressDetections 1.0
+	HarfangLab-GetScheduledTasks 1.0
+	Velociraptor_Flow 0.1
+	DomainTools_ReverseIP 2.0
+	Yeti 1.0
+	StaxxSearch 1.0
+	PaloAltoNGFW_unblock_external_domain 1.0.0
+	SinkDB 1.1
+	PaloAltoNGFW_unblock_external_IP_address 1.0.0
+	MalwareBazaar 1.0
+	DomainToolsIris_AddRiskyDNSTag 1.0
+	Robtex_Forward_PDNS_Query 1.0
+	CheckPhish_Submit 1.0
+	RiskIQ_Services 1.0
+	HarfangLab-GetDrivers 1.0
+	HarfangLab-GetWMI 1.0
+	ONYPHE_OnDemandScan 1.0
+	CrowdStrikeFalcon_RemoveIOC 1.0
+	MSDefender-PushIOC-Alert 2.0
+	MSEntraID_GetUserInfo 1.0
+	WOT_Lookup 2.0
+	JoeSandbox_File_Analysis_Inet 3.0
+	CrowdstrikeFalcon_Sandbox_Linux 1.0
+	RiskIQ_Whois 1.0
+	Yara 3.0
+	Ldap_Query 3.0
+	JoeSandbox_File_Analysis_Noinet 3.0
+	HarfangLab-GetPrefetches 1.0
+	Elasticsearch_Analysis 1.0
+	ONYPHE_Search 1.1
+	Splunk_Search_Hash 3.0
+	Autofocus_GetSampleAnalysis 1.0
+	HarfangLab-KillProcess 1.0
+	Virustotal_Downloader 0.1
+	DuoUnlockUserAccount 1.0
+	PaloAltoNGFW_unblock_internal_user 1.0.0
+	ONYPHE_Summary_API 1.2
+	Axur 1.0
+	EmergingThreats_IPInfo 1.0
+	Shodan_ReverseDNS 1.0
+	Shodan_Host_History 1.0
+	HarfangLab-GetServices 1.0
+	Wazuh 1.0
+	PassiveTotal_Whois_Details 2.0
+	MSDefender-RestrictAppExecution 1.0
+	Urlscan.io_Search 0.1.1
+	CrowdstrikeFalcon_getDeviceDetails 1.0
+	Jupyter_Run_Notebook_Responder 1.0
+	CIRCLHashlookup 1.1
+	ValidateObservable 1.0
+	CrowdStrikeFalcon_hideHost 1.0
+	PaloAltoNGFW_block_external_IP_address 2.0.0
+	DomainTools_WhoisLookup 2.0
+	PaloAltoNGFW_block_internal_IP_address 2.0.0
+	HarfangLab-GetArtifactRamdump 1.0
+	GRR 0.1
+	Censys 2.0
+	Cyberprotect_ThreatScore 3.0
+	PaloAltoNGFW_block_external_domain 2.0.0
+	MSEntraID_GetDirectoryAuditLogs 1.0
+	ZEROFOX_Close_alert 1.0
+	Minemeld 1.0
+	PassiveTotal_Malware 2.0
+	DomainTools_ReverseNameServer 2.0
+	CrowdstrikeFalcon_Sandbox_Win10 1.0
+	IntezerCommunity 1.0
+	DNSDB_IPHistory 2.0
+	PaloAltoNGFW_unblock_internal_domain 1.0.0
+	HarfangLab-IsolateHost 1.0
+	GoogleSafebrowsing 2.0
+	PassiveTotal_Enrichment 2.0
+	TestAnalyzer 1.0
+	PayloadSecurity_File_Analysis 1.0
+	CrowdstrikeFalcon_Sandbox_Win11 1.0
+	Msg_Parser 3.0
+	DNSdumpster_report 1.0
+	PaloAltoWildFire 1.0
+	CrowdstrikeFalcon_getDeviceAlerts 1.0
+	PassiveTotal_Unique_Resolutions 2.0
+	Splunk_Search_User 3.0
+	GreyNoise 3.2
+	RiskIQ_PushArtifactToProject 1.0
+	CuckooSandbox_Url_Analysis 1.2
+	BackscatterIO_Enrichment 1.0
+	CrowdStrikeFalcon_Sync 1.0
+	DomainTools_ReverseWhois 2.0
+	SophosIntelix_Submit_Static 0.1
+	Umbrella_Blacklister 1.1
+	ONYPHE_Ctiscan 1.0
+	ZEROFOX_Takedown_request 1.0
+	CyberCrime-Tracker 1.0
+	Gmail_DeleteMessage 1.0
+	EmailRep 1.0
+	KasperskyThreatIntelligencePortal 1.0
+	URLhaus 2.0
+	MISP 2.1
+	TeamCymruMHR 1.0
+	DShield_lookup 1.0
+	EmergingThreats_MalwareInfo 1.0
+	StopForumSpam 1.0
+	DomainTools_HostingHistory 2.0
+	Gatewatcher_CTI 2.0
+	EclecticIQ_SearchObservable 2.0
+	CyberChef_FromBase64 1.0
+	MSEntraID_ForcePasswordResetWithMFA 1.0
+	VirusTotal_Rescan 3.1
+	Telegram 1.0
+	Abuse_Finder 3.0
+	MSEntraID_GetManagedDevicesInfo 1.0
+	Investigate_Categorization 1.0
+	HarfangLab-GetArtifactMFT 1.0
+	HarfangLab-SearchSourceIP 1.0
+	HarfangLab-GetPipes 1.0
+	SecurityTrails_Whois 1.0
+	DomainTools_WhoisHistory 2.0
+	VirusTotal_DownloadSample 3.1
+	Watcher_CheckDomain 1.3
+	MetaDefenderCloud_Scan 1.0
+	PassiveTotal_Ssl_Certificate_History 2.0
+	HarfangLab-GetArtifactUSN 1.0
+	CrowdstrikeFalcon_Sandbox_Android 1.0
+	HarfangLab-GetArtifactPrefetch 1.0
+	Splunk_Search_Other 3.0
+	Malpedia 1.0
+	MetaDefenderCore_Scan 1.0
+	CrowdStrikeFalcon_unhideHost 1.0
+	Splunk_Search_Registry 3.0
+	RiskIQ_Malware 1.0
+	Crt_sh_Transparency_Logs 1.0
+	PaloAltoCortexXDR_scan 1.0
+	IPinfo_Details 1.0
+	CERTatPassiveDNS 2.0
+	Urlscan.io_Scan 0.1.0
+	RiskIQ_Components 1.0
+	HarfangLab-GetNetworkShares 1.0
+	DomainToolsIris_CheckMaliciousTags 1.0
+	MSDefender-UnRestrictAppExecution 1.0
+	ProofPoint_Lookup 1.0
+	PayloadSecurity_Url_Analysis 1.0
+	HarfangLab-GetArtifactLogs 1.0
+	MSDefender-FullVirusscan 1.0
+	Shodan_DNSResolve 1.0
+	Splunk_Search_Mail_Subject 3.0
+	VMRay 4.1
+	GoogleDNS_resolve 1.0.0
+	DomainToolsIris_Pivot 1.0
+	MetaDefenderCloud_GetReport 1.0
+	FalconSandbox 1.0
+	OpenCTI_SearchExactObservable 2.0
+	Shodan_InfoDomain 1.0
+	CuckooSandbox_File_Analysis_Inet 1.2
+	Crowdstrike_Falcon_Custom_IOC 2.0
+	HarfangLab-GetArtifactHives 1.0
+	DNS_Lookingglass 1.0
+	Jupyter_Run_Notebook_Analyzer 1.0
+	GoogleVisionAPI_WebDetection 1.0.0
+	Valhalla_GetRuleMatches 0.3.1
+	Triage 2.0
+	RiskIQ_Trackers 1.0
+	Vulners_CVE 1.0
+	Splunk_Search_IP 3.0
+	TorBlutmagie 1.0
+	SpamAssassin 1.0
+	Splunk_Search_Domain_FQDN 3.0
+	MSDefender-IsolateMachine 1.0
+	RiskIQ_Reputation 1.0
+	FireHOLBlocklists 2.0
+	Vulners_IOC 1.0
+	RiskIQ_Artifacts 1.0
+	ThreatGrid 1.0
+	HarfangLab-GetBinary 1.0
+	HarfangLab-UnisolateHost 1.0
+	Robtex_Reverse_PDNS_Query 1.0
+	Gmail_UnblockDomain 1.0
+	CrowdStrikeFalcon_AddIOC 1.0
+	PassiveTotal_Ssl_Certificate_Details 2.0
+	CrowdstrikeFalcon_GetDeviceVulnerabilities 1.0
+	PaloAltoNGFW_block_internal_user 1.0.0
+	AMPforEndpoints_IsolationStart 1.0
+	Hashdd_Status 2.0
+	PaloAltoNGFW_unblock_port_for_external_communication 1.0.0
+	PaloAltoCortexXDR_unisolate 1.0
+	HarfangLab-GetArtifactFilesystem 1.0
+	PaloAltoNGFW_unblock_internal_IP_address 1.0.0
+	DNSDB_NameHistory 2.0
+	PhishingInitiative_Lookup 2.0
+	AMPforEndpoints_IsolationStop 1.0
+	CrowdStrikeFalcon_HostContainment 1.0
+	ONYPHE_Vulnscan 1.1
+	SoltraEdge 1.0
+	Pulsedive_GetIndicator 1.0
+	QRadar_Auto_Closing_Offense 1.0
+	IBMXForce_Lookup 1.0
+	Gmail_UnblockSender 1.0
+	Splunk_Search_URL_URI_Path 3.0
+	RiskIQ_HostpairChildren 1.0
+	IVRE 1.0
+	JoeSandbox_Url_Analysis 2.0
+	HarfangLab-DumpProcess 1.0
+	CISMCAP 1.0
+	Binalyze_AIR_Isolation 1.0
+	Malwares_Scan 1.0
+	Robtex_IP_Query 1.0
+	PaloAltoNGFW_unblock_external_user 1.0.0
+	HybridAnalysis_GetReport 1.0
+	DuoLockUserAccount 1.0
+	AMPforEndpoints_SCDRemove 1.0
+	ClamAV_FileInfo 1.1
+	CrowdStrikeFalcon_LiftContainmentHost 1.0
+	PaloAltoNGFW_block_port_for_internal_communication 2.0.0
+	HarfangLab-GetRunKeys 1.0
+	ForcepointWebsensePing 1.0
+	Shodan_Search 2.0
+	Umbrella_Report 1.0
+	Lookyloo_Screenshot 1.0
+	Slack_CreateChannel 1.0
+	PassiveTotal_Components 2.0
+	MetaDefenderCore_GetReport 1.0
+	Crowdsec_Analyzer 1.1
+	MalwareClustering_Search 1.0
+	Mnemonic_pDNS_Closed 3.0
+	C25CortexAnalyzer_Investigate 1.0
+	MSEntraID_ForcePasswordReset 1.0
+	Splunk_Search_File_Filename 3.0
+	HarfangLab-GetProcesses 1.0
+	UnshortenLink 1.2
+	CrowdstrikeFalcon_Sandbox_MacOS 1.0
+	HarfangLab-GetArtifactEvtx 1.0
+	n8n 1.0
+
+2025-09-20 10:26:41,928 [INFO] from play.core.server.AkkaHttpServer in main - Enabling HTTP/2 on Akka HTTP server...
+2025-09-20 10:26:41,930 [INFO] from play.core.server.AkkaHttpServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9001
+2025-09-20 10:26:42,423 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 38ms and returned 200 278 bytes
+2025-09-20 10:26:52,536 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:26:54,558 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.5 GET /cortex/api/status took 2ms and returned 200 278 bytes
+2025-09-20 10:26:54,559 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.5 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:26:54,777 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.5 GET /cortex/api/alert took 130ms and returned 200 2 bytes
+2025-09-20 10:27:02,602 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:27:12,677 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 172.20.0.4 GET /cortex/api/status took 2ms and returned 200 278 bytes
+2025-09-20 10:27:22,744 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:27:32,800 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:27:42,868 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:27:52,918 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:27:54,639 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.5 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:27:54,801 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.5 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:27:54,836 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.5 GET /cortex/api/alert took 29ms and returned 200 2 bytes
+2025-09-20 10:28:02,968 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:28:13,026 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:28:23,080 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:28:33,133 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:28:43,213 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:28:53,275 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:28:54,660 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.5 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:28:54,860 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.5 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:28:54,895 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.5 GET /cortex/api/alert took 30ms and returned 200 2 bytes
+2025-09-20 10:29:03,332 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:29:13,403 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 2ms and returned 200 278 bytes
+2025-09-20 10:29:23,469 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:29:33,520 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:29:43,585 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.4 GET /cortex/api/status took 2ms and returned 200 278 bytes
+2025-09-20 10:29:53,648 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:29:54,679 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.5 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:29:54,919 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.5 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:29:54,946 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.5 GET /cortex/api/alert took 22ms and returned 200 2 bytes
+2025-09-20 10:30:03,710 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:30:13,758 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:30:16,050 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.5 GET /cortex/api/analyzer?range=all took 62ms and returned 200 
+2025-09-20 10:30:16,103 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 172.20.0.5 POST /cortex/api/responder/_search took 87ms and returned 200 
+2025-09-20 10:30:23,808 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:30:31,116 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-8 - 172.20.0.1 GET /cortex took 1ms and returned 303 0 bytes
+2025-09-20 10:30:31,270 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-12 - 172.20.0.1 GET /cortex/index.html took 87ms and returned 200 1254 bytes
+2025-09-20 10:30:31,312 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-12 - 172.20.0.1 GET /cortex/assets/styles/css/app.c1f34f54314be47309d2.css took 6ms and returned 200 11370408 bytes
+2025-09-20 10:30:31,324 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.1 GET /cortex/app.c1f34f54314be47309d2.js took 3ms and returned 200 2754871 bytes
+2025-09-20 10:30:32,016 [ERROR] from org.elastic4play.controllers.Authenticated in application-akka.actor.default-dispatcher-15 - Authentication failure:
+	session: AuthenticationError User session not found
+	pki: AuthenticationError Certificate authentication is not configured
+	key: AuthenticationError Authentication header not found
+	init: AuthenticationError Use of initial user is forbidden because users exist in database
+2025-09-20 10:30:32,017 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-15 - 172.20.0.1 GET /cortex/api/user/current took 14ms and returned 401 65 bytes
+2025-09-20 10:30:32,032 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-15 - 172.20.0.1 GET /cortex/favicon-32x32.png took 6ms and returned 200 1728 bytes
+2025-09-20 10:30:32,072 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.1 GET /cortex/api/status took 2ms and returned 200 278 bytes
+2025-09-20 10:30:33,872 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:30:40,913 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.1 POST /cortex/api/login took 23ms and returned 200 52 bytes
+2025-09-20 10:30:41,040 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.1 GET /cortex/api/user/current took 13ms and returned 200 322 bytes
+2025-09-20 10:30:41,057 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.1 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:30:41,059 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-12 - 172.20.0.1 GET /cortex/api/user/current took 4ms and returned 200 322 bytes
+2025-09-20 10:30:41,116 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.1 POST /cortex/api/organization/_search?range=0-50 took 12ms and returned 200 
+2025-09-20 10:30:41,173 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-12 - 172.20.0.1 GET /cortex/api/user/admin took 14ms and returned 200 305 bytes
+2025-09-20 10:30:43,950 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-12 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:30:51,086 [WARN] from org.thp.cortex.services.ErrorHandler in application-akka.actor.default-dispatcher-7 - GET /cortex/api/alert returned 403
+2025-09-20 10:30:51,087 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.1 GET /cortex/api/alert took 2ms and returned 403 84 bytes
+2025-09-20 10:30:54,010 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:31:01,085 [WARN] from org.thp.cortex.services.ErrorHandler in application-akka.actor.default-dispatcher-15 - GET /cortex/api/alert returned 403
+2025-09-20 10:31:01,085 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-15 - 172.20.0.1 GET /cortex/api/alert took 2ms and returned 403 84 bytes
+2025-09-20 10:31:04,058 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:31:11,084 [WARN] from org.thp.cortex.services.ErrorHandler in application-akka.actor.default-dispatcher-6 - GET /cortex/api/alert returned 403
+2025-09-20 10:31:11,085 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.1 GET /cortex/api/alert took 1ms and returned 403 84 bytes
+2025-09-20 10:31:14,102 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:31:16,065 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.5 GET /cortex/api/status took 2ms and returned 200 278 bytes
+2025-09-20 10:31:16,065 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.5 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:31:16,163 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.5 GET /cortex/api/alert took 58ms and returned 200 2 bytes
+2025-09-20 10:31:21,092 [WARN] from org.thp.cortex.services.ErrorHandler in application-akka.actor.default-dispatcher-4 - GET /cortex/api/alert returned 403
+2025-09-20 10:31:21,092 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.1 GET /cortex/api/alert took 3ms and returned 403 84 bytes
+2025-09-20 10:31:24,155 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-15 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:31:31,084 [WARN] from org.thp.cortex.services.ErrorHandler in application-akka.actor.default-dispatcher-4 - GET /cortex/api/alert returned 403
+2025-09-20 10:31:31,085 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.1 GET /cortex/api/alert took 1ms and returned 403 84 bytes
+2025-09-20 10:31:34,243 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 3ms and returned 200 278 bytes
+2025-09-20 10:31:41,110 [WARN] from org.thp.cortex.services.ErrorHandler in application-akka.actor.default-dispatcher-6 - GET /cortex/api/alert returned 403
+2025-09-20 10:31:41,111 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.1 GET /cortex/api/alert took 7ms and returned 403 84 bytes
+2025-09-20 10:31:44,300 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:31:51,095 [WARN] from org.thp.cortex.services.ErrorHandler in application-akka.actor.default-dispatcher-4 - GET /cortex/api/alert returned 403
+2025-09-20 10:31:51,097 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.1 GET /cortex/api/alert took 5ms and returned 403 84 bytes
+2025-09-20 10:31:54,369 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:31:58,226 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-15 - 172.20.0.1 GET /cortex/index.html took 1ms and returned 200 1254 bytes
+2025-09-20 10:31:58,268 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-15 - 172.20.0.1 GET /cortex/assets/styles/css/app.c1f34f54314be47309d2.css took 3ms and returned 200 11370408 bytes
+2025-09-20 10:31:58,817 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.5 POST /cortex/api/responder/_search took 99ms and returned 200 
+2025-09-20 10:31:58,821 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-6 - 172.20.0.5 GET /cortex/api/analyzer?range=all took 105ms and returned 200 
+2025-09-20 10:31:59,121 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.1 GET /cortex/api/status took 6ms and returned 200 278 bytes
+2025-09-20 10:31:59,121 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.1 GET /cortex/api/user/current took 13ms and returned 200 322 bytes
+2025-09-20 10:31:59,135 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.1 GET /cortex/favicon-32x32.png took 3ms and returned 200 1728 bytes
+2025-09-20 10:31:59,324 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.1 POST /cortex/api/organization/_search?range=0-50 took 29ms and returned 200 
+2025-09-20 10:31:59,325 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.1 GET /cortex/api/user/admin took 11ms and returned 200 305 bytes
+2025-09-20 10:32:04,725 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:32:09,521 [WARN] from org.thp.cortex.services.ErrorHandler in application-akka.actor.default-dispatcher-7 - GET /cortex/api/alert returned 403
+2025-09-20 10:32:09,522 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.1 GET /cortex/api/alert took 3ms and returned 403 84 bytes
+2025-09-20 10:32:14,915 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-15 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:32:19,497 [WARN] from org.thp.cortex.services.ErrorHandler in application-akka.actor.default-dispatcher-4 - GET /cortex/api/alert returned 403
+2025-09-20 10:32:19,498 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-4 - 172.20.0.1 GET /cortex/api/alert took 2ms and returned 403 84 bytes
+2025-09-20 10:32:25,031 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 2ms and returned 200 278 bytes
+2025-09-20 10:32:27,530 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.5 GET /cortex/api/status took 2ms and returned 200 278 bytes
+2025-09-20 10:32:28,458 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.5 GET /cortex/api/status took 8ms and returned 200 278 bytes
+2025-09-20 10:32:29,532 [WARN] from org.thp.cortex.services.ErrorHandler in application-akka.actor.default-dispatcher-5 - GET /cortex/api/alert returned 403
+2025-09-20 10:32:29,535 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.1 GET /cortex/api/alert took 13ms and returned 403 84 bytes
+2025-09-20 10:32:35,081 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:32:38,976 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-15 - 172.20.0.5 GET /cortex/api/alert took 44ms and returned 200 2 bytes
+2025-09-20 10:32:39,494 [WARN] from org.thp.cortex.services.ErrorHandler in application-akka.actor.default-dispatcher-7 - GET /cortex/api/alert returned 403
+2025-09-20 10:32:39,494 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-7 - 172.20.0.1 GET /cortex/api/alert took 2ms and returned 403 84 bytes
+2025-09-20 10:32:45,135 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 0ms and returned 200 278 bytes
+2025-09-20 10:32:49,500 [WARN] from org.thp.cortex.services.ErrorHandler in application-akka.actor.default-dispatcher-9 - GET /cortex/api/alert returned 403
+2025-09-20 10:32:49,501 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.1 GET /cortex/api/alert took 4ms and returned 403 84 bytes
+2025-09-20 10:32:55,221 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-5 - 172.20.0.4 GET /cortex/api/status took 1ms and returned 200 278 bytes
+2025-09-20 10:32:59,494 [WARN] from org.thp.cortex.services.ErrorHandler in application-akka.actor.default-dispatcher-9 - GET /cortex/api/alert returned 403
+2025-09-20 10:32:59,494 [INFO] from org.thp.cortex.services.AccessLogFilter in application-akka.actor.default-dispatcher-9 - 172.20.0.1 GET /cortex/api/alert took 3ms and returned 403 84 bytes
